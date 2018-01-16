@@ -69,4 +69,23 @@ public class MusicOrganizer
             System.out.println("Indice no valido");
         }
     }
+    
+    /**
+     * Devuelve si el indice es valido o no
+     */
+    public boolean validIndex(int index)
+    {
+        // Devuelve true si el indice es valido y devuelvo false si no lo es
+        boolean validIndex = true;
+        if (files.size() <= index)
+        {
+            validIndex = false;
+        }
+        else
+        {
+            validIndex = true;
+        }
+        return validIndex;
+    }
+    
 }
